@@ -1,0 +1,128 @@
+:root{
+    --white: var(--white);
+    --background-color: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --purple: hsl(332, 51%, 32%);
+    --light-purple: hsl(330, 100%, 98%);
+}
+
+/*reset browser default settings*/
+html, body{
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    
+}
+body{
+    padding: 1rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+/*code for main div container*/
+#main-container{
+    padding: 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    margin: 3rem auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/*resetting default code for h1, h2, and p*/
+h1{
+    margin: 1.5rem 0;
+    font-family: 'Young serif', serif;
+}
+p{
+    margin: 0 0 1.5rem;
+}
+h2{
+    margin-bottom: 0;
+    color: var(--Brown-800);
+    font-family: 'Young serif', serif;
+}
+
+/*code for image*/
+#jollof-image{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*code for preparation time content*/
+#Preparation-time-container{
+    background-color: var(--light-purple);
+    padding: 1rem 0 1rem 1.5rem;
+    border-radius: 10px;
+}
+#prep-header{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--purple);
+    margin-bottom: 1rem;
+}
+
+/*code for table content*/
+table{
+    border-collapse: collapse;
+    margin: 0 0 1.5rem;
+    width: 100%;
+}
+td{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.463);
+    padding: 0.3rem 0 0.3rem 8rem;
+    font-weight: bold;
+    color: var(--Brown-800);
+}
+#nutrition{
+    margin-bottom: 1rem;
+}
+.table-container{
+    max-width: 100%;
+}
+
+/*code for list content*/
+li{
+    margin-bottom: 0.6rem;
+}
+
+/*code for responsiveness*/
+
+/*meaning below 575px this is how I want you to look*/
+@media (max-width: 575px){
+
+    body{
+        line-height: 1.4;
+    }
+
+    #main-container{
+        width: 20rem;
+        padding: 1rem;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    #Preparation-time-container{
+        padding: 1rem;
+    }
+    #Preparation-time-container li{
+        font-size: 1rem;
+    }
+    
+    td{
+        padding: 0.3rem 0 0.3rem 3rem;
+    }
+}
+
